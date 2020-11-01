@@ -3,10 +3,12 @@ export const initialState = {
     user: null,
 };
 
+export const getBasketTotal = (basket) =>
+basket?.reduce((amount, item) => item.price + amount, 0);
+
 const reducer = (state, action) => {
     // switch check against a bunch of cases like strings
     // switch on an action type
-    console.log(action)
     switch(action.type) {
         case 'ADD_TO_BASKET':
         return { 
