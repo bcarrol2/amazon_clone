@@ -7,7 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { useStateValue } from './StateProvider';
 
 function Header() {
-    const [{basket}] = useStateValue()
+    const [{basket}] = useStateValue();
+
     return (
         <nav className="header">
             <MenuIcon className="header__menuIcon" />
@@ -40,7 +41,7 @@ function Header() {
                 <Link className="header__link" to="/checkout">
                     <div className="header__optionBasket">
                         <ShoppingBasketIcon />
-                        <span className="header__basketCount">{basket.length}</span>
+                        <span className="header__basketCount">{basket?.length}</span>
                     </div>
                 </Link>
             </div>

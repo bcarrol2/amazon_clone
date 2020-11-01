@@ -1,17 +1,30 @@
 export const initialState = {
-    basket: []
+    basket: [],
+    user: null,
 };
 
-function reducer(state, action) {
+const reducer = (state, action) => {
     // switch check against a bunch of cases like strings
     // switch on an action type
+    console.log(action)
     switch(action.type) {
         case 'ADD_TO_BASKET':
-
-            break;
+        return { 
+            ...state,
+            basket: [...state.basket, action.item],
+         };
         case 'REMOVE_FROM_BASKET':
+            let newBasket = [...state.basket]
+            const index = state.basket.findIndex(
+                (basketItem) => basketItem.id === action.id)
+            ;
 
-            break;
+            if (index >= 0) {
+                newBasket.splice(index, 1);
+            } else {
+                console.warn(`Can't remove product (id: ${action.id})`);
+            }
+        return { ...state, basket: newBasket }
         default:
             return state;
     }
