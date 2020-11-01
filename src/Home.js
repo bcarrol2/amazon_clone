@@ -9,14 +9,57 @@ function Home() {
             className="home__image"
             src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
             />
+            <div className="home__row">
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
 
-            <Product
-                id="12342353"
-                title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-                price={11}
-                rating={5}
-                image=""
-            />
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
+
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
+                
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="12342353"
+                    title="The Martian: A Novel Andy Weir Hardcover"
+                    price={23.99}
+                    rating={5}
+                    image="https://images-na.ssl-images-amazon.com/images/I/41vw+RmEi4L._SX327_BO1,204,203,200_.jpg"
+                />
+            </div>
         </div>
     )
 };
